@@ -1,4 +1,4 @@
-FROM jenkins/jenkins:2.78-alpine
+FROM jenkins/jenkins:lts-alpine
 MAINTAINER Julian Nonino <noninojulian@outlook.com>
 
 # Install View Plugins
@@ -23,5 +23,5 @@ COPY jobs /usr/share/jenkins/ref/jobs
 COPY custom.groovy /usr/share/jenkins/ref/init.groovy.d/
 
 # Change owner of keys and disable initial wizard
-RUN echo 2.78 > /usr/share/jenkins/ref/jenkins.install.UpgradeWizard.state && \
-    echo 2.78 > /usr/share/jenkins/ref/jenkins.install.InstallUtil.lastExecVersion
+RUN echo lts > /usr/share/jenkins/ref/jenkins.install.UpgradeWizard.state && \
+    echo lts > /usr/share/jenkins/ref/jenkins.install.InstallUtil.lastExecVersion
