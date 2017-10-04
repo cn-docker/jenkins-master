@@ -1,6 +1,8 @@
 FROM jenkins/jenkins:lts-alpine
 MAINTAINER Julian Nonino <noninojulian@outlook.com>
 
+# Install Pipeline plugins
+RUN /usr/local/bin/install-plugins.sh blueocean:1.2.4
 # Install View Plugins
 RUN /usr/local/bin/install-plugins.sh radiatorviewplugin:1.29 nested-view:1.14 dashboard-view:2.9.11
 # Install Job Config Plugins
