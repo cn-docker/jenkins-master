@@ -11,7 +11,7 @@ Create a folder to store Jenkins data files, so the container can be reseted wit
     
 Build the Docker Image  
     
-    docker build -t jenkins-master jenkins-master
+    docker build -t jenkins-master .
     
 Run the container  
     
@@ -23,3 +23,14 @@ In order to have Jenkins jobs automatically configured when you run the containe
 
 1. Inside the jobs folder (jenkins-master/jobs) add a new folder named with the name of the new job.  
 2. Inside the folder created in the previous step, add a new file named config.xml. That file should contain all the configuration of new job.
+
+## Security
+
+This distribution of Jenkins enables password security with the following credentials:  
+
+    Username: admin  
+    Password: admin  
+
+Only logged in users can manage Jenkins and is disable the anonymous access.
+
+PLEASE CHANGE THIS SECURITY SETTINGS AFTER DEPLOYING YOUR INSTANCE
