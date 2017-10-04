@@ -2,21 +2,21 @@ FROM jenkins/jenkins:lts-alpine
 MAINTAINER Julian Nonino <noninojulian@outlook.com>
 
 # Install Pipeline plugins
-RUN /usr/local/bin/install-plugins.sh blueocean:1.2.4
+RUN /usr/local/bin/install-plugins.sh blueocean
 # Install View Plugins
-RUN /usr/local/bin/install-plugins.sh radiatorviewplugin:1.29 nested-view:1.14 dashboard-view:2.9.11
+RUN /usr/local/bin/install-plugins.sh radiatorviewplugin nested-view dashboard-view
 # Install Job Config Plugins
-RUN /usr/local/bin/install-plugins.sh job-dsl:1.63 jobConfigHistory:2.16 workflow-step-api:2.11 workflow-job:2.12.1 workflow-aggregator:2.5 postbuild-task:1.8
+RUN /usr/local/bin/install-plugins.sh job-dsl jobConfigHistory workflow-step-api workflow-job workflow-aggregator postbuild-task
 # Install SCM Plugins
-RUN /usr/local/bin/install-plugins.sh git:3.3.0 clone-workspace-scm:0.6 multiple-scms:0.6 ws-cleanup:0.33
+RUN /usr/local/bin/install-plugins.sh git clone-workspace-scm multiple-scms ws-cleanup
 # Install Static Anlysis Plugins
-RUN /usr/local/bin/install-plugins.sh checkstyle:3.48 pmd:3.48 findbugs:4.70 tasks:4.51
+RUN /usr/local/bin/install-plugins.sh checkstyle pmd findbugs tasks
 # Install Build Plugins
-RUN /usr/local/bin/install-plugins.sh maven:2.15.1 gradle:1.27 purge-build-queue-plugin:1.0 build-timeout:1.18 rebuild:1.25 global-build-stats:1.4 build-metrics:1.3
+RUN /usr/local/bin/install-plugins.sh maven gradle purge-build-queue-plugin build-timeout rebuild global-build-stats build-metrics
 # Install Test Plugins
-RUN /usr/local/bin/install-plugins.sh jacoco:2.2.1 cobertura:1.10 test-results-analyzer:0.3.4 test-stability:2.2
+RUN /usr/local/bin/install-plugins.sh jacoco cobertura test-results-analyzer test-stability
 # Install Misc Plugins
-RUN /usr/local/bin/install-plugins.sh nomad:0.4 disk-usage:0.28 timestamper:1.8.8 greenballs:1.15 ci-game:1.26 emotional-jenkins-plugin:1.2
+RUN /usr/local/bin/install-plugins.sh nomad disk-usage timestamper greenballs ci-game emotional-jenkins-plugin
 
 # Copy default jobs, please check README.md to know how to add your own jobs
 COPY jobs /usr/share/jenkins/ref/jobs
