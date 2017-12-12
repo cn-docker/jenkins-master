@@ -5,8 +5,6 @@ MAINTAINER Julian Nonino <noninojulian@outlook.com>
 RUN /usr/local/bin/install-plugins.sh blueocean
 # Install View Plugins
 RUN /usr/local/bin/install-plugins.sh radiatorviewplugin nested-view dashboard-view
-# Install Job Config Plugins
-RUN /usr/local/bin/install-plugins.sh job-dsl jobConfigHistory workflow-step-api workflow-job workflow-aggregator postbuild-task
 # Install SCM Plugins
 RUN /usr/local/bin/install-plugins.sh git git-parameter git-changelog github bitbucket bitbucket-approve bitbucket-build-status-notifier perforce mercurial subversion tfs accurev cvs teamconcert clone-workspace-scm multiple-scms ws-cleanup
 # Install Static Anlysis Plugins
@@ -16,7 +14,7 @@ RUN /usr/local/bin/install-plugins.sh ant maven gradle nodejs nant groovy purge-
 # Install Test Plugins
 RUN /usr/local/bin/install-plugins.sh jacoco cobertura emma test-results-analyzer test-stability analysis-collector build-failure-analyzer dependency-check-jenkins-plugin nunit ncover 
 # Artifact Uploaders Plugins
-RUN /usr/local/bin/install-plugins.sh artifactory nexus-artifact-uploader s3 windows-azure-storage package-drone publish-over-ssh publish-over-dropbox 
+RUN /usr/local/bin/install-plugins.sh artifactory nexus-artifact-uploader publish-over-ssh publish-over-dropbox 
 # Install Cloud Plugins
 RUN /usr/local/bin/install-plugins.sh nomad kubernetes amazon-ecs scalable-amazon-ecs azure-vm-agents openstack-cloud mesos
 # Install Slaves Plugins
@@ -25,6 +23,8 @@ RUN /usr/local/bin/install-plugins.sh swarm ssh-slaves windows-slaves
 RUN /usr/local/bin/install-plugins.sh github-oauth gitlab-oauth google-login gravatar kerberos-sso ldap ldapemail
 # Install Misc Plugins
 RUN /usr/local/bin/install-plugins.sh disk-usage timestamper greenballs ci-game emotional-jenkins-plugin uno-choice logstash splunk-devops performance
+# Install Job Config Plugins
+RUN /usr/local/bin/install-plugins.sh job-dsl workflow-aggregator jobConfigHistory postbuild-task
 
 # Init scripts
 COPY groovy_scripts/*.groovy /usr/share/jenkins/ref/init.groovy.d/
