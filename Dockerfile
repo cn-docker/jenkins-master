@@ -1,5 +1,5 @@
 FROM jenkins/jenkins:lts-alpine
-MAINTAINER Julian Nonino <noninojulian@outlook.com>
+LABEL maintainer="Julian Nonino <noninojulian@outlook.com>"
 
 # Install Pipeline plugins
 RUN /usr/local/bin/install-plugins.sh blueocean
