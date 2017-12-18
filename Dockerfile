@@ -10,7 +10,7 @@ RUN /usr/local/bin/install-plugins.sh checkstyle pmd findbugs tasks
 # Install Build Plugins
 RUN /usr/local/bin/install-plugins.sh ant maven gradle nodejs nant groovy purge-build-queue-plugin build-timeout rebuild global-build-stats build-metrics
 # Install Test Plugins
-RUN /usr/local/bin/install-plugins.sh jacoco cobertura emma test-results-analyzer test-stability analysis-collector build-failure-analyzer dependency-check-jenkins-plugin nunit ncover 
+RUN /usr/local/bin/install-plugins.sh jacoco cobertura emma test-results-analyzer test-stability analysis-collector build-failure-analyzer dependency-check-jenkins-plugin nunit
 # Artifact Uploaders Plugins
 RUN /usr/local/bin/install-plugins.sh artifactory nexus-artifact-uploader publish-over-ssh publish-over-dropbox 
 # Install Cloud Plugins
