@@ -1,8 +1,6 @@
 FROM jenkins/jenkins:lts-alpine
 LABEL maintainer="Julian Nonino <noninojulian@outlook.com>"
 
-# Install Pipeline plugins
-RUN /usr/local/bin/install-plugins.sh blueocean
 # Install View Plugins
 RUN /usr/local/bin/install-plugins.sh radiatorviewplugin nested-view dashboard-view
 # Install SCM Plugins
@@ -25,6 +23,8 @@ RUN /usr/local/bin/install-plugins.sh github-oauth gitlab-oauth google-login gra
 RUN /usr/local/bin/install-plugins.sh disk-usage timestamper greenballs ci-game emotional-jenkins-plugin uno-choice logstash splunk-devops performance
 # Install Job Config Plugins
 RUN /usr/local/bin/install-plugins.sh job-dsl workflow-aggregator jobConfigHistory postbuild-task
+# Install Pipeline plugins
+RUN /usr/local/bin/install-plugins.sh blueocean
 
 # Init scripts
 COPY groovy_scripts/*.groovy /usr/share/jenkins/ref/init.groovy.d/
