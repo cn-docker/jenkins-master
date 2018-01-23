@@ -2,6 +2,12 @@
 
 This is the Jenkins master node. There are no executors in this node, so you need to attach one or more slaves to run the jobs.
 
+   https://hub.docker.com/r/jnonino/jenkins-master/
+
+## Docker Image Tags ##
+
+-	[`latest` (*Dockerfile*)](https://github.com/jnonino/jenkins-master/blob/master/Dockerfile)
+
 ## Start Master Jenkins ##
 
 Create a folder to store Jenkins data files, so the container can be reseted without losing information.  
