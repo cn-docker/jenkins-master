@@ -1,0 +1,3 @@
+radiatorviewplugin
+nested-view
+dashboard-view

@@ -1,0 +1,4 @@
+artifactory
+nexus-artifact-uploader
+publish-over-ssh
+publish-over-dropbox

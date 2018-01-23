@@ -1,0 +1,9 @@
+disk-usage
+timestamper
+greenballs
+ci-game
+emotional-jenkins-plugin
+uno-choice
+logstash
+splunk-devops
+performance

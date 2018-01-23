@@ -1,0 +1,8 @@
+jacoco
+cobertura
+emma
+test-results-analyzer
+test-stability analysis-collector
+build-failure-analyzer
+dependency-check-jenkins-plugin
+nunit

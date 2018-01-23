@@ -1,0 +1,16 @@
+git
+git-parameter
+git-changelog
+github
+bitbucket
+bitbucket-approve
+bitbucket-build-status-notifier
+perforce
+mercurial
+subversion
+tfs
+accurev
+cvs
+teamconcert
+clone-workspace-scm multiple-scms
+ws-cleanup

@@ -1,0 +1,3 @@
+swarm
+ssh-slaves
+windows-slaves
