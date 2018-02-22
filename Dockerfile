@@ -14,3 +14,8 @@ COPY jobs /usr/share/jenkins/ref/jobs
 # Change owner of keys and disable initial wizard
 RUN echo lts > /usr/share/jenkins/ref/jenkins.install.UpgradeWizard.state && \
     echo lts > /usr/share/jenkins/ref/jenkins.install.InstallUtil.lastExecVersion
+    
+# Expose Ports
+#   - UI:      8080
+#   - Slaves: 50000
+EXPOSE 8080 50000
