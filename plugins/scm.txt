@@ -5,7 +5,6 @@ github
 bitbucket
 bitbucket-approve
 bitbucket-build-status-notifier
-perforce
 mercurial
 subversion
 tfs
