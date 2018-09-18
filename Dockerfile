@@ -1,5 +1,5 @@
 FROM jenkins/jenkins:lts-alpine
-LABEL maintainer="Julian Nonino <noninojulian@outlook.com>"
+LABEL maintainer="Julian Nonino <noninojulian@gmail.com>"
 
 # Install Plugins
 COPY plugins/*.txt /tmp/plugins/
