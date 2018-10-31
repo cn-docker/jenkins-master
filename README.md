@@ -6,7 +6,7 @@ This is the Jenkins master node. There are no executors in this node, so you nee
 
 ## Docker Image Tags ##
 
--	[`latest` (*Dockerfile*)](https://github.com/jnonino/jenkins-master/blob/master/Dockerfile)
+-	[`latest` (*Dockerfile*)](https://bitbucket.org/jnonino-devops-cloud/jenkins-master/src/master/Dockerfile)
 
 ## Start Master Jenkins ##
 
