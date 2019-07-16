@@ -1,4 +1,4 @@
-# Jenkins Master Server # [![Docker hub](https://img.shields.io/docker/pulls/jnonino/jenkins-master.svg)](https://hub.docker.com/r/jnonino/jenkins-master/)
+# Jenkins Master Server [![Docker hub](https://img.shields.io/docker/pulls/jnonino/jenkins-master.svg)](https://hub.docker.com/r/jnonino/jenkins-master/)
 
 This is the Jenkins master node. There are no executors in this node, so you need to attach one or more slaves to run the jobs.
 
