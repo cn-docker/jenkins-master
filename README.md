@@ -1,8 +1,16 @@
-# Jenkins Master Server [![Docker hub](https://img.shields.io/docker/pulls/jnonino/jenkins-master.svg)](https://hub.docker.com/r/jnonino/jenkins-master/)
+# Jenkins Master Server
+
+[![](https://img.shields.io/docker/pulls/jnonino/jenkins-master.svg)](https://hub.docker.com/r/jnonino/jenkins-master/)
+[![](hhttps://img.shields.io/docker/build/jnonino/jenkins-master)](https://hub.docker.com/r/jnonino/jenkins-master/)
+[![](https://img.shields.io/docker/automated/jnonino/jenkins-master)](https://hub.docker.com/r/jnonino/jenkins-master/)
+[![](https://img.shields.io/docker/stars/jnonino/jenkins-master)](https://hub.docker.com/r/jnonino/jenkins-master/)
+[![](https://img.shields.io/github/license/jnonino/jenkins-master-docker-image)](https://github.com/jnonino/jenkins-master-docker-image)
+[![](https://img.shields.io/github/issues/jnonino/jenkins-master-docker-image)](https://github.com/jnonino/jenkins-master-docker-image)
+[![](https://img.shields.io/github/issues-closed/jnonino/jenkins-master-docker-image)](https://github.com/jnonino/jenkins-master-docker-image)
+[![](https://img.shields.io/github/languages/code-size/jnonino/jenkins-master-docker-image)](https://github.com/jnonino/jenkins-master-docker-image)
+[![](https://img.shields.io/github/repo-size/jnonino/jenkins-master-docker-image)](https://github.com/jnonino/jenkins-master-docker-image)
 
 This is the Jenkins master node. There are no executors in this node, so you need to attach one or more slaves to run the jobs.
-
-   https://hub.docker.com/r/jnonino/jenkins-master/
 
 ## Docker Image Tags ##
 
