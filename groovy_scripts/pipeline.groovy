@@ -8,7 +8,7 @@ import org.jenkinsci.plugins.workflow.libs.*;
 def instance = Jenkins.getInstance();
 
 // Configure Global Pipeline Libraries
-GitSCMSource gitSource = new GitSCMSource("https://github.com/jnonino/jenkins-pipeline-library.git");
+GitSCMSource gitSource = new GitSCMSource("https://github.com/cn-cicd/jenkins-pipeline-library.git");
 SCMSourceRetriever scmRetriever = new SCMSourceRetriever(gitSource);
 List<LibraryConfiguration> libraries = []
 LibraryConfiguration libraryConfig = new LibraryConfiguration("jenkins-pipeline-library", scmRetriever);
