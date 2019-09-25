@@ -1,9 +1,9 @@
 # Jenkins Master Server
 
-[![](https://img.shields.io/docker/pulls/jnonino/jenkins-master.svg)](https://hub.docker.com/r/jnonino/jenkins-master/)
-[![](hhttps://img.shields.io/docker/build/jnonino/jenkins-master)](https://hub.docker.com/r/jnonino/jenkins-master/)
-[![](https://img.shields.io/docker/automated/jnonino/jenkins-master)](https://hub.docker.com/r/jnonino/jenkins-master/)
-[![](https://img.shields.io/docker/stars/jnonino/jenkins-master)](https://hub.docker.com/r/jnonino/jenkins-master/)
+[![](https://img.shields.io/docker/pulls/cnservices/jenkins-master.svg)](https://hub.docker.com/r/cnservices/jenkins-master/)
+[![](hhttps://img.shields.io/docker/build/cnservices/jenkins-master)](https://hub.docker.com/r/cnservices/jenkins-master/)
+[![](https://img.shields.io/docker/automated/cnservices/jenkins-master)](https://hub.docker.com/r/cnservices/jenkins-master/)
+[![](https://img.shields.io/docker/stars/cnservices/jenkins-master)](https://hub.docker.com/r/cnservices/jenkins-master/)
 [![](https://img.shields.io/github/license/cn-cicd/jenkins-master)](https://github.com/cn-cicd/jenkins-master)
 [![](https://img.shields.io/github/issues/cn-cicd/jenkins-master)](https://github.com/cn-cicd/jenkins-master)
 [![](https://img.shields.io/github/issues-closed/cn-cicd/jenkins-master)](https://github.com/cn-cicd/jenkins-master)
@@ -12,10 +12,6 @@
 
 This is the Jenkins master node. There are no executors in this node, so you need to attach one or more slaves to run the jobs.
 
-## Docker Image Tags ##
-
--	[`latest` (*Dockerfile*)](https://bitbucket.org/jnonino-devops-cloud/jenkins-master/src/master/Dockerfile)
-
 ## Start Master Jenkins ##
 
 Create a folder to store Jenkins data files, so the container can be reseted without losing information.  
@@ -23,13 +19,9 @@ Create a folder to store Jenkins data files, so the container can be reseted wit
     mkdir ~/jenkins_data
     chmod 777 ~/jenkins_data
     
-Build the Docker Image  
-    
-    docker build -t jenkins-master .
-    
 Run the container  
     
-    docker run -d --name jenkins --restart=always -p 8080:8080 -p 50000:50000 -v ~/jenkins_data:/var/jenkins_home jenkins-master 
+    docker run -d --name jenkins --restart=always -p 8080:8080 -p 50000:50000 -v ~/jenkins_data:/var/jenkins_home cnservices/jenkins-master 
 
 ## Adding jobs by default ##
 
