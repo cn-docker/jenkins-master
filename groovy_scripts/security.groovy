@@ -1,7 +1,7 @@
 import jenkins.*;
 import jenkins.model.*;
 import hudson.*;
-import hudson.model.*;  
+import hudson.model.*;
 import hudson.security.*
 import hudson.security.captcha.CaptchaSupport
 import hudson.security.csrf.DefaultCrumbIssuer;
@@ -9,10 +9,6 @@ import jenkins.security.s2m.AdminWhitelistRule
 
 // Get Jenkins instance
 def instance = Jenkins.getInstance();
-
-// Disable Remote Access CLI
-instance.getDescriptor("jenkins.CLI").get().setEnabled(false);
-instance.save();
 
 //Enable CSRF Protection
 instance.setCrumbIssuer(new DefaultCrumbIssuer(true));

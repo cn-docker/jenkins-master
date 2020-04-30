@@ -8,4 +8,3 @@ purge-build-queue-plugin
 build-timeout
 rebuild
 global-build-stats
-build-metrics

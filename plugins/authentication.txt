@@ -2,6 +2,4 @@ github-oauth
 gitlab-oauth
 google-login
 gravatar
-kerberos-sso
 ldap
-ldapemail
