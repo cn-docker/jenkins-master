@@ -4,11 +4,11 @@
 [![](hhttps://img.shields.io/docker/build/cnservices/jenkins-master)](https://hub.docker.com/r/cnservices/jenkins-master/)
 [![](https://img.shields.io/docker/automated/cnservices/jenkins-master)](https://hub.docker.com/r/cnservices/jenkins-master/)
 [![](https://img.shields.io/docker/stars/cnservices/jenkins-master)](https://hub.docker.com/r/cnservices/jenkins-master/)
-[![](https://img.shields.io/github/license/cn-cicd/jenkins-master)](https://github.com/cn-cicd/jenkins-master)
-[![](https://img.shields.io/github/issues/cn-cicd/jenkins-master)](https://github.com/cn-cicd/jenkins-master)
-[![](https://img.shields.io/github/issues-closed/cn-cicd/jenkins-master)](https://github.com/cn-cicd/jenkins-master)
-[![](https://img.shields.io/github/languages/code-size/cn-cicd/jenkins-master)](https://github.com/cn-cicd/jenkins-master)
-[![](https://img.shields.io/github/repo-size/cn-cicd/jenkins-master)](https://github.com/cn-cicd/jenkins-master)
+[![](https://img.shields.io/github/license/cn-docker/jenkins-master)](https://github.com/cn-docker/jenkins-master)
+[![](https://img.shields.io/github/issues/cn-docker/jenkins-master)](https://github.com/cn-docker/jenkins-master)
+[![](https://img.shields.io/github/issues-closed/cn-docker/jenkins-master)](https://github.com/cn-docker/jenkins-master)
+[![](https://img.shields.io/github/languages/code-size/cn-docker/jenkins-master)](https://github.com/cn-docker/jenkins-master)
+[![](https://img.shields.io/github/repo-size/cn-docker/jenkins-master)](https://github.com/cn-docker/jenkins-master)
 
 This is the Jenkins master node. There are no executors in this node, so you need to attach one or more slaves to run the jobs.
 
