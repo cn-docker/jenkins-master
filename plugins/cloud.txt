@@ -1,4 +1,3 @@
 kubernetes
-amazon-ecs
 scalable-amazon-ecs
 azure-vm-agents
