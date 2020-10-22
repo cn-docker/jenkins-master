@@ -1,4 +1,0 @@
-checkstyle
-pmd
-findbugs
-tasks
