@@ -11,5 +11,4 @@ accurev
 cvs
 teamconcert
 clone-workspace-scm
-multiple-scms
 ws-cleanup
