@@ -3,7 +3,8 @@ LABEL maintainer="CN Services <noninojulian@gmail.com>"
 
 # Install Plugins
 COPY plugins/*.txt /tmp/plugins/
-RUN for plugins_file in /tmp/plugins/*.txt ; do /usr/local/bin/install-plugins.sh < $plugins_file ; done
+# RUN for plugins_file in /tmp/plugins/*.txt ; do /usr/local/bin/install-plugins.sh < $plugins_file ; done
+RUN for plugins_file in /tmp/plugins/*.txt ; do jenkins-plugin-cli -f $plugins_file ; done
 
 # Init scripts
 COPY groovy_scripts/*.groovy /usr/share/jenkins/ref/init.groovy.d/
