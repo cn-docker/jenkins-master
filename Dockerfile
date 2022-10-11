@@ -1,4 +1,4 @@
-FROM jenkins/jenkins:2.372-alpine
+FROM jenkins/jenkins:2.373-alpine
 LABEL maintainer="CN Services <noninojulian@gmail.com>"
 
 # Install Plugins
