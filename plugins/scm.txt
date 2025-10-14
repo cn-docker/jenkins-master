@@ -6,7 +6,6 @@ bitbucket
 bitbucket-build-status-notifier
 mercurial
 subversion
-tfs
 accurev
 cvs
 teamconcert
